@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Exemplo Bootstrap</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Farol</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <button class="btn btn-light">Logar como ADM</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Div da Logo -->
+    <div class="container logo-container">
+        <img src="./images/farol-pmjp.png" alt="Logo" style="max-width: 100%;">
+        <!-- <img src="./images/logo-pmjp.png" alt="Logo" style="max-width: 100%;"> -->
+    </div>
+
+    <!-- Div com Nome, CPF, Data de Nascimento -->
+    <form action="#">
+        <div class="container white-snow">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="cpf"><strong>Nome</strong>*</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="Nome">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCPF"><strong>CPF</strong>*</label>
+                    <input type="text" class="form-control" id="inputCPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-01" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputNascimento"><strong>Data de Nascimento</strong></label>
+                    <input type="text" class="form-control" id="inputNascimento" placeholder="DD/MM/AAAA">
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <label for="selectSexo"><strong>Sexo</strong>*</label>
+                    <select id="selectSexo" class="form-control">
+                    <option selected>Escolha...</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Outro</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="selectEscolaridade"><strong>Escolaridade</strong>*</label>
+                    <select id="selectEscolaridade" class="form-control">
+                        <option selected>Escolha...</option>
+                        <option>Fundamental</option>
+                        <option>Médio</option>
+                        <option>Superior</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="selectSecretaria"><strong>Secretaria</strong>*</label>
+                    <select id="selectSecretaria" class="form-control">
+                        <option selected>Escolha...</option>
+                        <option>Secretaria 1</option>
+                        <option>Secretaria 2</option>
+                        <option>Secretaria 3</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputSigla"><strong>Sigla</strong>*</label>
+                    <input type="text" class="form-control" id="inputSigla" placeholder="Sigla">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Div com Botão -->
+    <div class="container white-snow text-right mt-2 p-3">
+        <button class="btn black-button">Enviar</button>
+    </div>
+        <div class="container white-snow text-left mt-2 p-3 bg-danger text-white font-italic">
+            <a><span>LGPD:</span> A lei estabelece uma estrutura legal de direitos dos(as) titulares de dados pessoais. Esses direitos devem ser garantidos durante toda a existência do tratamento dos dados pessoais realizado pelo órgão ou entidade.</a>
+        </div>
+        <div class="container logo-container">
+            <img src="./images/logo-umti.png" alt="Logo" style="height: 45px;" width="120px">
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
