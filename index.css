@@ -26,11 +26,11 @@ body {
 }
 .logo-container {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .container {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 span {
     font-weight: 700;
